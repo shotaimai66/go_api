@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"example/gen/models"
+	"go_api/gen/models"
 )
 
 // PostUsersOKCode is the HTTP code returned for type PostUsersOK

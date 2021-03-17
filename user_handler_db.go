@@ -1,4 +1,4 @@
-package example
+package go_api
 
 import (
 	"context"

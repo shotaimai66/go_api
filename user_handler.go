@@ -1,10 +1,10 @@
-package example
+package go_api
 
 import (
 	"fmt"
 
-	"example/gen/models"
-	"example/gen/restapi/operations"
+	"go_api/gen/models"
+	"go_api/gen/restapi/operations"
 	"github.com/go-openapi/runtime/middleware"
 )
 

@@ -10,9 +10,9 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	"example"
+	"go_api"
 
-	"example/gen/restapi/operations"
+	"go_api/gen/restapi/operations"
 )
 
 //go:generate swagger generate server --target ../../gen --name ExampleApp --spec ../../swagger.yaml --principal interface{} --exclude-main
@@ -39,7 +39,7 @@ func configureAPI(api *operations.ExampleAppAPI) http.Handler {
 
 	api.JSONProducer = runtime.JSONProducer()
 
-	api.GetUsersHandler = operations.GetUsersHandlerFunc(example.GetUsers)
+	api.GetUsersHandler = operations.GetUsersHandlerFunc(go_api.GetUsers)
 	if api.PostUsersHandler == nil {
 		api.PostUsersHandler = operations.PostUsersHandlerFunc(func(params operations.PostUsersParams) middleware.Responder {
 			return middleware.NotImplemented("operation operations.PostUsers has not yet been implemented")

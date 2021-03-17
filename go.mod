@@ -1,4 +1,4 @@
-module example
+module go_api
 
 go 1.15
 

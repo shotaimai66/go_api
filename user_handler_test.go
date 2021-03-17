@@ -1,4 +1,4 @@
-package example
+package go_api
 
 import (
 	"context"
@@ -8,8 +8,8 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
-	_"example/gen/models"
-	"example/gen/restapi/operations"
+	_"go_api/gen/models"
+	"go_api/gen/restapi/operations"
 	"github.com/go-openapi/runtime"
 	"github.com/guregu/dynamo"
 	"github.com/nsf/jsondiff"

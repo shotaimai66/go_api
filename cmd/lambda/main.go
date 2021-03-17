@@ -7,8 +7,8 @@ import (
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/awslabs/aws-lambda-go-api-proxy/httpadapter"
-	"example/gen/restapi"
-	"example/gen/restapi/operations"
+	"go_api/gen/restapi"
+	"go_api/gen/restapi/operations"
 	"github.com/go-openapi/loads"
 )
 
